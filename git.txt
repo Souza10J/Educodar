@@ -1,0 +1,25 @@
+git -v /version of git
+
+mkdir - criar um repositório/
+
+git init - cria um repositório local o git/
+
+git status - mostra status no repositório/ sempra usar se náo souber em que parte está/
+
+git add index.html - tracked antes de commitar, caso não usar o arquivo ficará como untracked/ 
+
+git commit -m "comentério"
+
+git log - mostra um log do que foi feito no arquivo/ 
+
+code index.html - abrir o arquivo index no VSCODE/ PLUGGIN do GIT no VSCODE/ 
+
+git checkout - para descartar as mudanças/
+
+git commit -a - faz 2 trabalhos numa linha/
+
+$ git config --global user.name "John Doe"
+
+$ git config --global user.email johndoe@example.com
+
+git add. - adiciona tudo trackked

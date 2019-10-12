@@ -1,0 +1,118 @@
+/* CSS PORTFOLIO */
+/* RESETS */
+*{
+	margin:0px;
+	padding: 0px;
+} 
+body{
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 15px;
+}
+.conteiner{
+	display: flex;
+	flex-flow: row wrap;
+	align-content: stretch;
+	justify-content: space-around;
+}
+
+/*Inicio Conteudo Header */
+header{ 
+	width: auto;
+	height: 170px;
+	border-width: 3px;
+	background-color: rgba(0, 84, 110, 0);
+	background-image: url(../img/background.jpg);
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	text-align: center;
+
+}
+.logo{
+	width:130px;
+	height: 130px;
+	margin-left: 10px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 10px;
+	display: flex;
+	justify-self: left;
+}
+.h1topo{
+	height: 11vh;
+	width: 20vw;
+	display: flex;
+	text-align: center;
+	padding:2.5vw 0vw 0vw 2.5vw;
+}
+nav{
+	height: 5vh;
+	width: 27vw;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+	'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: flex;
+}
+ul li{
+	list-style: none;
+	display: inline;
+	padding: 0px 10px;
+	align-self: baseline;
+}
+a{
+	text-decoration-line: none;
+	color: aliceblue;
+	text-align: center;
+	transition: ease 250ms;
+	padding: 5px;
+}
+/* Fim Conteudo Header */
+
+.info1, .info2, .info3{
+	width: 400px;
+	height: 380px;
+	margin: 80px 0px 0px 0px;
+	background-color: rgba(255, 255, 255, 0.918);
+	color: rgb(0, 0, 0);
+	padding: 40px 10px 0px 10px;
+	border-radius: 10px;
+	font-weight: 150;
+	font-size: 16pt;
+	transition: cubic-bezier(0.08, 0.19, 0.03,-0.05) 400ms;
+	align-items: center;
+}
+.info1:hover, .info2:hover, .info3:hover{
+	color: white;
+	background-color: rgb(12, 58, 85);
+	transition-delay: 200ms;
+	transition-duration: 900ms;
+	font-weight: 150;
+	font-size: 16pt;
+	align-items: center;
+}
+.imginfos {
+	width:180px;
+	height:180px;
+	border-radius: 10px;
+	margin: auto;
+	display: flex;
+	justify-self: center;
+	box-shadow: 10px 10px 10px 0px rgba(12, 58, 85, 0.75);
+}
+.pinfo{
+	margin-top: 15px;
+	padding: 50px 0px 0px 0px;
+}
+footer{
+	width: auto;
+	height: 20px;
+	text-align: center;
+	font-size: smaller;
+	margin-top: 10px;
+	background-color: rgb(12, 56, 85);
+}
