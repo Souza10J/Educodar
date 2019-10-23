@@ -1,99 +1,119 @@
 /* CSS PORTFOLIO */
 /* RESETS */
-*{
-	margin:0px;
-	padding: 0px;
-} 
 body{
-	background-color: rgb(255, 255, 255);
 	color: rgb(255, 255, 255);
 	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 15px;
 }
 .conteiner{
 	display: flex;
-	flex-flow: row wrap;
-	align-content: stretch;
-	justify-content: space-around;
 }
 
+@font-face{
+	font-family: "Barlow-cond-medium";
+	src: url(../fonts/barlow-condensed/BarlowCondensed-Medium.ttf);
+}
+@font-face {
+	font-family: "Barlow-cond-light";
+	src: url(../fonts/barlow-condensed/BarlowCondensed-Light.ttf);
+}
+@font-face{
+	font-family: "Nav-Light";
+	src: url(../fonts/rajdhani/Nav.ttf);
+}
+@font-face{
+	font-family: "Offside";
+	src: url(../fonts/offside/Offside-Regular.ttf);
+}
 /*Inicio Conteudo Header */
 header{ 
 	width: auto;
-	height: 170px;
-	border-width: 3px;
-	background-color: rgba(0, 84, 110, 0);
-	background-image: url(../img/background.jpg);
-	background-size: 100vw;
-	background-repeat: no-repeat;
+	height: 400px;
+	background: url(../img/img1.jpg) no-repeat;
+	background-size: auto;
+	background-position: center;
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
-	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
 
-}
-.logo{
-	width:130px;
-	height: 130px;
-	margin-left: 10px;
-	padding: 10px;
-	background: rgba(255, 255, 255, 0);
-	border-radius: 10px;
-	display: flex;
-	justify-self: left;
-}
 .h1topo{
-	height: 11vh;
-	width: 20vw;
-	display: flex;
+	font-family: "Offside";
+	font-size: 30pt;
+	height: auto;
+	width: auto;
 	text-align: center;
-	padding:2.5vw 0vw 0vw 2.5vw;
+	background-color: rgba(12, 56, 85, 0.774);
+	border-radius: 5px;
+	border: 0 !important;
+	margin-top: 150px;
 }
 nav{
-	height: 5vh;
-	width: 27vw;
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
-	'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	height: 50px;
+	width: 80vw;
+	font-family: "Nav-Light";
+	font-size: 14pt;
+	font-stretch: expanded;
+	background-color: rgba(12, 56, 85, 0.774);
 	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-flow: column wrap;
 }
 ul li{
 	list-style: none;
 	display: inline;
-	padding: 0px 10px;
-	align-self: baseline;
+	align-self: flex-start;
+	margin-right: 6vw;
 }
 a{
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+}
+.ainfo{
+	color:rgb(12, 56, 85);
 	text-decoration-line: none;
-	color: aliceblue;
 	text-align: center;
 	transition: ease 250ms;
-	padding: 5px;
+	padding-left: 40px;
 }
-/* Fim Conteudo Header */
+.ainfo:hover{
+	color:white;
+}
 
-.info1, .info2, .info3{
+/* Fim Conteudo Header */
+.spoiler-info{
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	align-content: flex-start;
+	justify-content: space-around;
+}
+.info{
 	width: 400px;
 	height: 380px;
 	margin: 80px 0px 0px 0px;
-	background-color: rgba(255, 255, 255, 0.918);
-	color: rgb(0, 0, 0);
-	padding: 40px 10px 0px 10px;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.918); 
+	padding: 30px 10px 0px 10px;
 	border-radius: 10px;
+	font-family: "Barlow-cond-medium";
 	font-weight: 150;
 	font-size: 16pt;
 	transition: cubic-bezier(0.08, 0.19, 0.03,-0.05) 400ms;
 	align-items: center;
 }
-.info1:hover, .info2:hover, .info3:hover{
+.info:hover{
 	color: white;
-	background-color: rgb(12, 58, 85);
+	background-color: rgb(12, 56, 85);
 	transition-delay: 200ms;
 	transition-duration: 900ms;
 	font-weight: 150;
 	font-size: 16pt;
 	align-items: center;
+}
+.spoiler-info:nth-child(3){
+	order:2;
 }
 .imginfos {
 	width:180px;
@@ -104,15 +124,17 @@ a{
 	justify-self: center;
 	box-shadow: 10px 10px 10px 0px rgba(12, 58, 85, 0.75);
 }
-.pinfo{
+.hinfo{
 	margin-top: 15px;
 	padding: 50px 0px 0px 0px;
 }
 footer{
 	width: auto;
-	height: 20px;
+	height: 25px;
 	text-align: center;
 	font-size: smaller;
 	margin-top: 10px;
 	background-color: rgb(12, 56, 85);
+	font-family: "Barlow-cond-light";
+	font-size: 14pt;
 }
