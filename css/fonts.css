@@ -1,0 +1,25 @@
+
+@font-face{
+	font-family: "Barlow-cond-medium";
+	src: url(../fonts/barlow-condensed/BarlowCondensed-Medium.ttf);
+}
+@font-face {
+	font-family: "Barlow-cond-light";
+	src: url(../fonts/barlow-condensed/BarlowCondensed-Light.ttf);
+}
+@font-face{
+	font-family: "Nav";
+	src: url(../fonts/rajdhani/Nav.ttf);
+}
+@font-face{
+	font-family: "Offside";
+	src: url(../fonts/offside/Offside-Regular.ttf);
+}
+@font-face{
+    font-family: "Barlow-cond-regular";
+    src: url(../fonts/barlow-condensed/BarlowCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: "Nav-regular";
+    src: url(../fonts/rajdhani/Nav-regular.ttf);
+}

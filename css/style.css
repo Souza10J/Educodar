@@ -6,22 +6,6 @@ body{
 	font-size: 15px;
 }
 
-@font-face{
-	font-family: "Barlow-cond-medium";
-	src: url(../fonts/barlow-condensed/BarlowCondensed-Medium.ttf);
-}
-@font-face {
-	font-family: "Barlow-cond-light";
-	src: url(../fonts/barlow-condensed/BarlowCondensed-Light.ttf);
-}
-@font-face{
-	font-family: "Nav-Light";
-	src: url(../fonts/rajdhani/Nav.ttf);
-}
-@font-face{
-	font-family: "Offside";
-	src: url(../fonts/offside/Offside-Regular.ttf);
-}
 /*Inicio Conteudo Header */
 header{ 
 	width: auto;
@@ -35,12 +19,13 @@ header{
 }
 
 .h1topo{
+	color: rgba(12, 56, 85, 0.774);
 	font-family: "Offside";
 	font-size: 30pt;
 	height: auto;
 	width: auto;
 	text-align: center;
-	background-color: rgba(12, 56, 85, 0.774);
+	background-color: white;
 	border-radius: 5px;
 	border: 0 !important;
 	margin-top: 150px;
@@ -48,7 +33,7 @@ header{
 nav{
 	height: 50px;
 	width: 80vw;
-	font-family: "Nav-Light";
+	font-family: "Nav";
 	font-size: 14pt;
 	font-stretch: expanded;
 	background-color: rgba(12, 56, 85, 0.774);
@@ -57,11 +42,10 @@ nav{
 	flex-direction: column;
 	flex-flow: column wrap;
 }
-ul li{
+.ulnav li{
 	list-style: none;
-	display: inline;
-	align-self: flex-start;
-	margin-right: 6vw;
+	display: inline-flex;
+	margin-right: 3vw;
 }
 a{
  text-decoration: none;
@@ -109,9 +93,6 @@ a{
 	font-size: 16pt;
 	align-items: center;
 }
-.spoiler-info:nth-child(3){
-	order:2;
-}
 .imginfos {
 	width:180px;
 	height:180px;
@@ -122,24 +103,71 @@ a{
 	box-shadow: 10px 10px 10px 0px rgba(12, 58, 85, 0.75);
 }
 .hinfo{
-	margin-top: 15px;
+	margin-top;: 15px;
 	padding: 50px 0px 0px 0px;
 }
 footer{
 	width: auto;
-	height: 25px;
+	height: auto;
 	text-align: center;
 	font-size: smaller;
-	margin-top: 10px;
 	background-color: rgb(12, 56, 85);
-	font-family: "Barlow-cond-light";
+	font-family: "Nav-regular";
 	font-size: 14pt;
+	padding: 3px 0;
+
 }
 /* Fim do conteudo Index */
-
 #fusao{
-	width: 250px;
-	height: 250px;
-	background-color: rgba(12, 56, 85, 0.774);
+	width: auto;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0.110);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
+#informatica{
+	width: auto;
+	height: 340px;
+	background-color: rgba(0, 0, 0, 0.110);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+#redes{
+	width: auto;
+	height: 400px;
+	background-color: rgba(255, 255, 255, 0.110);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.ulredes{
+	list-style: circle;
+	color: black;
+	justify-self: left;
+	width: 550px;
+}
+#ferramentas{
+	width: auto;
+	height: 340px;
+	background-color: rgba(0, 0, 0, 0.110);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.hservs{
+	font-family: "Barlow-cond-regular";
+	padding-top: 30px;
+	color: black;
+}
+.pservs{
+	color: black;
+	font-family: "Barlow-cond-regular";
+	font-size: 15pt;
+	font-weight: 100;
+	text-indent: 14.5px;
+	line-height: 45px;
+	width: 600px;
 
+}
