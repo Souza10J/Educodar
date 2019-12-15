@@ -5,11 +5,15 @@ body{
 	font-family: Verdana, Tahoma, sans-serif;
 	font-size: 15px;
 }
-
+.conteiner-servs{
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: column wrap
+}
 /*Inicio Conteudo Header */
 header{ 
-	width: auto;
-	height: 400px;
+	width: 97.8125vw;
+	height: 600px;
 	background: url(../img/img1.jpg) no-repeat;
 	background-size: auto;
 	background-position: center;
@@ -17,7 +21,6 @@ header{
 	align-items: center;
 	flex-direction: column;
 }
-
 .h1topo{
 	color: rgba(12, 56, 85, 0.774);
 	font-family: "Offside";
@@ -32,15 +35,16 @@ header{
 }
 nav{
 	height: 50px;
-	width: 80vw;
+	width: 90vw;
 	font-family: "Nav";
 	font-size: 14pt;
-	font-stretch: expanded;
 	background-color: rgba(12, 56, 85, 0.774);
 	display: flex;
 	align-items: center;
-	flex-direction: column;
 	flex-flow: column wrap;
+}
+.ulnav{
+	padding: 0;
 }
 .ulnav li{
 	list-style: none;
@@ -69,6 +73,7 @@ a{
 	flex-shrink: 1;
 	align-content: flex-start;
 	justify-content: space-around;
+	margin-bottom: 30px;
 }
 .info{
 	width: 400px;
@@ -103,7 +108,7 @@ a{
 	box-shadow: 10px 10px 10px 0px rgba(12, 58, 85, 0.75);
 }
 .hinfo{
-	margin-top;: 15px;
+	margin-top: 15px;
 	padding: 50px 0px 0px 0px;
 }
 footer{
@@ -115,12 +120,11 @@ footer{
 	font-family: "Nav-regular";
 	font-size: 14pt;
 	padding: 3px 0;
-
 }
 /* Fim do conteudo Index */
 #fusao{
 	width: auto;
-	height: 350px;
+	height: 400px;
 	background-color: rgba(255, 255, 255, 0.110);
 	display: flex;
 	flex-flow: column;
@@ -128,7 +132,7 @@ footer{
 }
 #informatica{
 	width: auto;
-	height: 340px;
+	height: 400px;
 	background-color: rgba(0, 0, 0, 0.110);
 	display: flex;
 	flex-flow: column;
@@ -137,7 +141,7 @@ footer{
 #redes{
 	width: auto;
 	height: 400px;
-	background-color: rgba(255, 255, 255, 0.110);
+	background-color: rgba(204, 176, 176, 0.11);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -145,16 +149,18 @@ footer{
 .ulredes{
 	list-style: circle;
 	color: black;
-	justify-self: left;
-	width: 550px;
+	align-self: flex-start;
+	width: 20vw;
+	margin-left: 50px 
 }
 #ferramentas{
 	width: auto;
-	height: 340px;
+	height: 400px;
 	background-color: rgba(0, 0, 0, 0.110);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	justify-items: center;
 }
 .hservs{
 	font-family: "Barlow-cond-regular";
@@ -165,9 +171,9 @@ footer{
 	color: black;
 	font-family: "Barlow-cond-regular";
 	font-size: 15pt;
-	font-weight: 100;
+	font-weight: 500;
 	text-indent: 14.5px;
 	line-height: 45px;
-	width: 600px;
-
+	width: 90vw;
+	margin: 0px 0px 50px 0px
 }
