@@ -7,9 +7,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="viewport" content="height=device-hieght, initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<script src="./script.js"></script>
 	</head>	
 
 	<body>
@@ -18,7 +19,7 @@
 				<ul class="ulnav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#contatos">Contatos</a></li>
+					<li><a href="contatos.html">Contatos</a></li>
 					<li><a href="servs.html">Serviços</a></li>
 				</ul>
 			</nav>
@@ -28,28 +29,28 @@
 		<div class="conteiner">
 			<div>Somos interessados em resolver seus problemas tecnológicos!</div>
 			<div class="spoiler-info">				
-				<div class="info">
+				<div id="info1" onMouseOver="aniOne()" onMouseLeave="release()">
 					<a href="servs.html#fusao" class="ainfo"> 
-						<img src="img/img1.jpg" alt="fusao" class="imginfos">	
-						<h3 class="hinfo">Fusão</h3>
+						<img src="img/img1.jpg" alt="fusão" class="imginfos">	
+						<h3 id="hinfo1">Fusão</h3>
 					</a>
 				</div>
-				<div class="info">
+				<div id="info2" onMouseOver="aniTwo()" onMouseLeave="release()">
 					<a href="servs.html#informatica" class="ainfo">
 						<img src="img/img2.jpg" alt="tela_pc" class="imginfos">
-						<h3 class="hinfo">Serviços de Informática</h3>
+						<h3 id="hinfo2">Serviços de Informática</h3>
 					</a>
 				</div>
-				<div class="info">
+				<div id="info3" onMouseOver="aniTree()" onMouseLeave="release()">
 					<a href="servs.html#ferramentas" class="ainfo">
 						<img src="img/img3.jpg" alt="power_meter" class="imginfos">
-						<h3 class="hinfo">Ferramentas</h3>
+						<h3 id="hinfo3">Ferramentas</h3>
 					</a>
 				</div>
-				<div class="info">
+				<div id="info4" onMouseOver="aniFour()" onMouseLeave="release()">
 					<a href="servs.html#redes" class="ainfo">
 						<img src="img/redes.jpg" alt="redes" class="imginfos">
-						<h3 class="hinfo">Configuraçao de Redes</h3>
+						<h3 id="hinfo4">Configuraçao de Redes</h3>
 					</a>
 				</div>
 			</div>
